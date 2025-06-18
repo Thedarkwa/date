@@ -1,0 +1,227 @@
+/* Reset default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Helvetica Neue', sans-serif;
+  color: white;
+  background-color: #121212;
+}
+
+/* Wrapper with background image */
+.landing-wrapper {
+  background: url('pic11.png') no-repeat center center/cover;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+/* Header layout */
+.header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header nav img {
+  height: 40px;
+}
+
+.header nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hero Section */
+section {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+section h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+section span {
+  margin: 0 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+button {
+  margin-top: 1.5rem;
+  padding: 0.8rem 2rem;
+  background-color: #c271ff;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Learn from the pros */
+section h2 {
+  margin-top: 5rem;
+  font-size: 2rem;
+}
+.purple {
+  color: #c271ff;
+   margin-top: 5rem;
+  font-size: 2rem;
+}
+
+section > div > div {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+section > div > div > div {
+  text-align: center;
+}
+
+section > div > div > div img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+/* Remove space between 'Learn from the pros' and testimonial section */
+.learn-from-pros {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.testimonial {
+  margin-top: 0;
+}
+
+.testimonial {
+  background-color: #c271ff;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  text-align: left;
+  gap: 30px;
+}
+
+.testimonial img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonial blockquote {
+  font-style: italic;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  max-width: 600px;
+}
+
+.testimonial h3 {
+  font-weight: bold;
+  margin: 0;
+  font-size: 16px;
+}
+
+.testimonial p {
+  font-style: italic;
+  font-size: 14px;
+  margin: 5px 0 0 0;
+  color: #f0e6ff;
+}
+.popular-tutorials {
+  padding: 60px 20px;
+  background-color: white;
+  text-align: center;
+}
+
+.popular-tutorials h2 {
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.popular-tutorials h2 span {
+  color: #c271ff; /* highlight 'popular' */
+  font-weight: bold;
+}
+
+.popular-tutorials > div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  justify-content: center;
+}
+
+.popular-tutorials > div > div {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  text-align: left;
+}
+
+.popular-tutorials img:first-child {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  position: relative;
+}
+
+.popular-tutorials h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 15px 5px;
+}
+
+.popular-tutorials p {
+  font-size: 14px;
+  margin: 0 15px 10px;
+  color: #555;
+}
+
+.popular-tutorials div > div > div {
+  display: flex;
+  align-items: center;
+  margin: 10px 15px;
+  gap: 10px;
+}
+
+.popular-tutorials h4 {
+  font-size: 14px;
+  margin: 0;
+  color: #c271ff;
+}
+
+.popular-tutorials img[alt="Rating"] {
+  margin-left: auto;
+  height: 16px;
+}
+
+.popular-tutorials p:last-child {
+  font-size: 12px;
+  margin: 5px 15px 15px;
+  text-align: right;
+  color: #999;
+}
+
